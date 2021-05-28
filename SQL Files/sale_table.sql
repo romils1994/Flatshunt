@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `sale_table` (
   `Amenities` varchar(1000) NOT NULL,
   `Furnishing` varchar(20) NOT NULL,
   `Transaction` varchar(15) NOT NULL,
-  `Possession` varchar(15) NOT NULL,
+  `Possession` varchar(30) NOT NULL,
   `Description` varchar(5000) NOT NULL,
   `Image_Path` varchar(10000) NOT NULL,
   `Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,

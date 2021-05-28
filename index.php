@@ -22,7 +22,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script src="http://maps.google.com/maps/api/js?libraries=places&region=uk&language=en&sensor=false"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAB9itOCse1a9IYHHNbYd0MDPw_ZzZTc90&libraries=places&region=uk&language=en"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/nouislider.js"></script>
@@ -563,7 +563,7 @@
                             <p>Bandra West, Mumbai, Maharashtra 400050.</p>                               
                             <span class="card-title">Walk-IN</span>
                             <div class="row">
-                                <iframe width="100%" height="330" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJByw5MBHJ5zsRMemNHDm_Rzw&key=AIzaSyDv0ccQg8wSrUUnsoV3w-aIkIGn6Cfn7_A" allowfullscreen></iframe>
+                                <iframe width="100%" height="330" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJByw5MBHJ5zsRMemNHDm_Rzw&key=AIzaSyAB9itOCse1a9IYHHNbYd0MDPw_ZzZTc90" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>

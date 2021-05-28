@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/dropify.css">
-    <link rel="stylesheet" href="css/sweetalert.css">
+    
     <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/materialdesignicons.css">
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script src="http://maps.google.com/maps/api/js?libraries=places&region=uk&language=en&sensor=false"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAB9itOCse1a9IYHHNbYd0MDPw_ZzZTc90&libraries=places&region=uk&language=en"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.collagePlus.js"></script>
@@ -71,13 +71,6 @@
     };
     var resizeTimer = null;
     $(window).bind('resize', function() {
-        // hide all the images until we resize them
-        $('.Collage .Image_Wrapper').css("opacity", 0);
-        // set a timer to re-apply the plugin
-        if (resizeTimer) clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(collage, 200);
-    });
-    $(window).load('resize', function() {
         // hide all the images until we resize them
         $('.Collage .Image_Wrapper').css("opacity", 0);
         // set a timer to re-apply the plugin
@@ -128,7 +121,6 @@
                 var myLatlng = new google.maps.LatLng(data[0],data[1]);
                 var infowindow = new google.maps.InfoWindow();
                 $(document).ready(function(){
-                    console.log('Hello');
                     var map_options = {
                         center: myLatlng,
                         zoom: 18,
@@ -315,7 +307,7 @@
     </script>
     <?php
         $id = $_GET['id'];
-        $link = mysqli_connect("mysql.hostinger.in","u930263604_flat","Smarty1994","u930263604_flats");
+        $link = mysqli_connect("localhost","root","root","Flatshunt");
         $query = mysqli_query($link,"SELECT * from rent_table where ID = '$id'");
         while($row = mysqli_fetch_array($query)){
             $image = unserialize($row['Image_Path']);

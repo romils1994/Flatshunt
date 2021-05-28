@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/dropify.css">
-    <link rel="stylesheet" href="css/sweetalert.css">
+    
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
 
@@ -33,7 +33,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script src="http://maps.google.com/maps/api/js?libraries=places&region=uk&language=en&sensor=false"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAB9itOCse1a9IYHHNbYd0MDPw_ZzZTc90&libraries=places&region=uk&language=en"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/materialize.js"></script>
@@ -869,7 +869,7 @@
                                                                     <option value="Swimming" data-icon="images/Swimming.png">Swimming</option>
                                                                     <option value="Temple" data-icon="images/Temple.png">Temple</option>
                                                                     <option value="Water Supply" data-icon="images/Water Supply.png">Water Supply</option>
-                                                                    <option value="Visitors Parking" data-icon="images/Visitor's Parking.png">Visitor's Parking</option>
+                                                                    <option value="Visitors Parking" data-icon="images/Visitors Parking.png">Visitor's Parking</option>
                                                                 </select>
                                                                 <div class="errorTxt14 red-text left-align"></div>
                                                             </div>

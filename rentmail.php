@@ -1,15 +1,13 @@
 <?php
-    require_once "Mail.php";
-    require_once "Mail/mime.php";
     $id = $_POST['rent_id'];
     $name = $_POST['contact_name'];
     $email = $_POST['contact_mail'];
     $phone = $_POST['contact_phone'];
     $msg = $_POST['contact_msg'];
-    $link = mysqli_connect("mysql.hostinger.in","u930263604_flat","Smarty1994","u930263604_flats");
+    $link = mysqli_connect("localhost","root","root","Flatshunt");
     $query = mysqli_query($link,"SELECT Email_Id,Name from rent_table where ID = '$id'");
     while($row = mysqli_fetch_array($query)){
-        $to = '<'.$row['Email_Id'].'>';        
+        $to = $row['Email_Id'];
         $body = "<html>
                     <head>
                         <style>
@@ -83,35 +81,12 @@
     $from = 'Admin of Flatshunt<admin@flatshunt.com>';
     $subject = "You've Got an Inquiry!";
     $crlf = "\n";
-    $headers = array(
-        'From' => $from,
-        'To' => $to,
-        'Subject' => $subject,
-        'MIME-Version' => 1,
-        'Content-type' => 'text/html;charset=iso-8859-1'
-    );
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= 'From: ' . $from . "\r\n";
 
-    $mime = new Mail_mime($crlf);
-
-    // Setting the body of the email
-    $mime->setTXTBody($subject);
-    $mime->setHTMLBody($body);
-
-    $body = $mime->get();
-    $headers = $mime->headers($headers);
-
-    $smtp = Mail::factory('smtp', array(
-            'host' => 'smtp.gmail.com',
-            'port' => '587',
-            'auth' => true,
-            'username' => 'admin@flatshunt.com',
-            'password' => 'Smarty1994'
-        ));
-
-    $mail = $smtp->send($to, $headers, $body);
-
-    if (PEAR::isError($mail)) {
-        echo('<p>' . $mail->getMessage() . '</p>');
+    if (!mail($to, $subject, $body, $headers)) {
+        echo('<p>Unable to send mail</p>');
     } else {
         echo("<div class='card-panel teal lighten-2'><p class='white-text center'>Message successfully sent!</p></div>");
     }

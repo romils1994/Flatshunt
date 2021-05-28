@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/dropify.css">
-    <link rel="stylesheet" href="css/sweetalert.css">
+    
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
 
@@ -27,13 +27,14 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script src="http://maps.google.com/maps/api/js?libraries=places&region=uk&language=en&sensor=false"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAB9itOCse1a9IYHHNbYd0MDPw_ZzZTc90&libraries=places&region=uk&language=en"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/nouislider.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/jquery.validate.js"></script>
     <script src="js/smooth-scroll.js"></script>
+    <script src="js/wow.js"></script>
     <script src="js/main.js"></script>
     <script type="text/JavaScript">
     google.maps.event.addDomListener(window, 'load', function () {
@@ -242,7 +243,7 @@
     </header>
     <?php
         if(isset($_GET['buy_submit'])){
-            $link = mysqli_connect("mysql.hostinger.in","u930263604_flat","Smarty1994","u930263604_flats");
+            $link = mysqli_connect("localhost","root","root","Flatshunt");
             $room = $_GET['buy_room'];
             $locality = mysqli_real_escape_string($link, $_GET['buy_location']);
             $budget = mysqli_real_escape_string($link, $_GET['buy_budget']);

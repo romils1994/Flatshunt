@@ -8,7 +8,7 @@
 
         if($response["success"] === true)
         {
-        	$link = mysqli_connect("mysql.hostinger.in","u930263604_flat","Smarty1994","u930263604_flats");
+        	$link = mysqli_connect("localhost","root","root","Flatshunt");
 			$name = mysqli_real_escape_string($link, $_POST['sale_name']);
 			$email_id = mysqli_real_escape_string($link, $_POST['sale_mail']);
 			$contact_no = mysqli_real_escape_string($link, $_POST['sale_no']);
