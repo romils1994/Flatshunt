@@ -1,5 +1,5 @@
 <?php
-	$link = mysqli_connect("mysql.hostinger.in","u930263604_flat","Smarty1994","u930263604_flats");
+	$link = mysqli_connect("localhost","root","root","Flatshunt");
 	$id = $_POST['rent_id']; 
     $query = ("SELECT Latitude, Longitude, Address from rent_table where id = '$id'");
     $res=mysqli_query($link,$query);

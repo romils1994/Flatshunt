@@ -1,5 +1,5 @@
 <?php
-	$link = mysqli_connect("mysql.hostinger.in","u930263604_flat","Smarty1994","u930263604_flats");
+	$link = mysqli_connect("localhost","root","root","Flatshunt");
 	$name = mysqli_real_escape_string($link,$_POST['contact_name']);
 	$phone = mysqli_real_escape_string($link,$_POST['contact_phone']);
 	$email = mysqli_real_escape_string($link,$_POST['contact_mail']);
