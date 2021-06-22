@@ -1,5 +1,5 @@
 /*!
- * Materialize v0.97.5 (http://materializecss.com)
+ * Materialize v0.97.5 (https://materializecss.com)
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
@@ -112,7 +112,7 @@ e)}function t(b){if(!(this instanceof t))return new t(b);"object"===typeof b&&(b
 		return pieces.length > 1 ? pieces[1].length : 0;
 	}
 
-	// http://youmightnotneedjquery.com/#add_class
+	// https://youmightnotneedjquery.com/#add_class
 	function addClass ( el, className ) {
 		if ( el.classList ) {
 			el.classList.add(className);
@@ -121,7 +121,7 @@ e)}function t(b){if(!(this instanceof t))return new t(b);"object"===typeof b&&(b
 		}
 	}
 
-	// http://youmightnotneedjquery.com/#remove_class
+	// https://youmightnotneedjquery.com/#remove_class
 	function removeClass ( el, className ) {
 		if ( el.classList ) {
 			el.classList.remove(className);
@@ -130,7 +130,7 @@ e)}function t(b){if(!(this instanceof t))return new t(b);"object"===typeof b&&(b
 		}
 	}
 
-	// http://youmightnotneedjquery.com/#has_class
+	// https://youmightnotneedjquery.com/#has_class
 	function hasClass ( el, className ) {
 		if ( el.classList ) {
 			el.classList.contains(className);
