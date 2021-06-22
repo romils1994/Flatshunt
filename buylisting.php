@@ -20,14 +20,14 @@
     <link href="css/stylish-portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="font/material-design-icons/Material-Design-Icons.woff2">
     <link rel="stylesheet" href="fonts/materialdesignicons-webfont.woff2">
     <link rel="stylesheet" href="css/materialdesignicons.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAB9itOCse1a9IYHHNbYd0MDPw_ZzZTc90&libraries=places&region=uk&language=en"></script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyAB9itOCse1a9IYHHNbYd0MDPw_ZzZTc90&libraries=places&region=uk&language=en"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/nouislider.js"></script>
