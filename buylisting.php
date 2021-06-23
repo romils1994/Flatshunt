@@ -243,7 +243,7 @@
     </header>
     <?php
         if(isset($_GET['buy_submit'])){
-            $link = mysqli_connect("ec2-18-222-153-228.us-east-2.compute.amazonaws.com","root","root","Flatshunt");
+            $link = mysqli_connect("flatshuntdb.cwhxcsv9iwaa.us-east-2.rds.amazonaws.com","admin","admin123","Flatshunt");
             $room = $_GET['buy_room'];
             $locality = mysqli_real_escape_string($link, $_GET['buy_location']);
             $budget = mysqli_real_escape_string($link, $_GET['buy_budget']);

@@ -4,7 +4,7 @@
     $email = $_POST['contact_mail'];
     $phone = $_POST['contact_phone'];
     $msg = $_POST['contact_msg'];
-    $link = mysqli_connect("ec2-18-222-153-228.us-east-2.compute.amazonaws.com","root","root","Flatshunt");
+    $link = mysqli_connect("flatshuntdb.cwhxcsv9iwaa.us-east-2.rds.amazonaws.com","admin","admin123","Flatshunt");
     $query = mysqli_query($link,"SELECT Email_Id,Name from sale_table where ID = '$id'");
     while($row = mysqli_fetch_array($query)){
         $to = $row['Email_Id'];
