@@ -241,7 +241,7 @@
     </header>
     <?php
         if(isset($_GET['rent_submit'])){
-            $link = mysqli_connect("localhost","root","root","Flatshunt");
+            $link = mysqli_connect("ec2-18-222-153-228.us-east-2.compute.amazonaws.com","root","root","Flatshunt");
             $room = $_GET['rent_room'];
             foreach ($room as $value){
                 $result = array();
