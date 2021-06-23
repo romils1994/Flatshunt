@@ -307,7 +307,7 @@
     </script>
     <?php
         $id = $_GET['id'];
-        $link = mysqli_connect("ec2-18-222-153-228.us-east-2.compute.amazonaws.com","root","root","Flatshunt");
+        $link = mysqli_connect("flatshuntdb.cwhxcsv9iwaa.us-east-2.rds.amazonaws.com","admin","admin123","Flatshunt");
         $query = mysqli_query($link,"SELECT * from rent_table where ID = '$id'");
         while($row = mysqli_fetch_array($query)){
             $image = unserialize($row['Image_Path']);

@@ -1,5 +1,5 @@
 <?php
-	$link = mysqli_connect("ec2-18-222-153-228.us-east-2.compute.amazonaws.com","root","root","Flatshunt");
+	$link = mysqli_connect("flatshuntdb.cwhxcsv9iwaa.us-east-2.rds.amazonaws.com","admin","admin123","Flatshunt");
 	$name = mysqli_real_escape_string($link, $_POST['rent_name']);
 	$email_id = mysqli_real_escape_string($link, $_POST['rent_mail']);
 	$contact_no = mysqli_real_escape_string($link, $_POST['rent_no']);

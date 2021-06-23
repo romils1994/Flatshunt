@@ -1,5 +1,5 @@
 <?php
-	$link = mysqli_connect("ec2-18-222-153-228.us-east-2.compute.amazonaws.com","root","root","Flatshunt");
+	$link = mysqli_connect("flatshuntdb.cwhxcsv9iwaa.us-east-2.rds.amazonaws.com","admin","admin123","Flatshunt");
 	$id = $_POST['buy_id']; 
     $query = ("SELECT Latitude, Longitude, Address from sale_table where id = '$id'");
     $res=mysqli_query($link,$query);
