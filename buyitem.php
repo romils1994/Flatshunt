@@ -303,7 +303,7 @@
     </script>
     <?php
         $id = $_GET['id'];
-        $link = mysqli_connect("localhost","root","root","Flatshunt");
+        $link = mysqli_connect("ec2-18-222-153-228.us-east-2.compute.amazonaws.com","root","root","Flatshunt");
         $query = mysqli_query($link,"SELECT * from sale_table where ID = '$id'");
         while($row = mysqli_fetch_array($query)){
             $image = unserialize($row['Image_Path']);
